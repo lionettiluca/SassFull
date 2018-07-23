@@ -1,0 +1,129 @@
+/*
+* -----------------------------------------
+* SETTINGS
+* -----------------------------------------
+*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// ----------------------------------------- DISPLAY
+.d-b { display: block; }
+
+.d-ib { display: inline-block; }
+
+// ----------------------------------------- BOXING
+.full-height { height: 100%; }
+
+.full-width { width: 100%; }
+
+.o-hidden { overflow: hidden; }
+
+// ----------------------------------------- POSITION
+.p {
+    &-rel { position: relative; }
+    &-abs { position: absolute; }
+    &-fix { position: fixed; }
+    &-sti { position: sticky; }
+}
+
+// ----------------------------------------- FLOATING
+.float {
+    &-r { float: right; }
+    &-l { float: left; }
+    &-n { float: none; }
+}
+
+.clearfix {
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+// ----------------------------------------- BACKGROUND
+.bg {
+    &-black { background-color: #000; }
+    &-white { background-color: #fff; }
+    &-trans { background-color: transparent!important; }
+}
+
+// ----------------------------------------- WRAP
+.no-wrap { white-space: nowrap; }
+
+// ----------------------------------------- MARGIN
+
+.mb {
+    &-no { margin-bottom: 0; }
+    &-auto { margin-bottom: auto; }
+}
+
+.ml {
+    &-no { margin-left: 0; }
+    &-auto { margin-left: auto; }
+}
+
+.mr {
+    &-no { margin-right: 0; }
+    &-auto { margin-right: auto; }
+}
+
+.mt {
+    &-no { margin-top: 0; }
+    &-auto { margin-top: auto; }
+}
+
+// ----------------------------------------- TEXT
+.txt {
+    // ------ align
+    &-center { text-align: center; }
+    &-right { text-align: right; }
+    &-left { text-align: left; }
+    // ------ colors
+    &-white { color: #fff; }
+    &-black { color: #000; }
+    // ------ weight
+    &-extra-light { font-weight: 100; }
+    &-light { font-weight: 200; }
+    &-normal { font-weight: 400; }
+    &-medium { font-weight: 500; }
+    &-strong { font-weight: 700; }
+    // ------ transform
+    &-uppercase { text-transform: uppercase; }
+    &-lower { text-transform: lower; }
+}
+
+// ----------------------------------------- IMMAGINI
+img.img-block {
+    display: block;
+    max-width: 100%;
+}
+
+// ----------------------------------------- TRANSFORM
+.t {
+    &-r-90 {
+        display: inline-block;
+        transform: rotate(90deg);
+    }
+    &-r-180 {
+        display: inline-block;
+        transform: rotate(180deg);
+    }
+    &-r--90 {
+        display: inline-block;
+        transform: rotate(-90deg);
+    }
+    &-r--180 {
+        display: inline-block;
+        transform: rotate(-180deg);
+    }
+}

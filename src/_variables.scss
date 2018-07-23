@@ -1,0 +1,54 @@
+/*
+* -----------------------------------------
+* VARIABLES
+* -----------------------------------------
+*/
+
+// ----------------------------------------- COLORS
+// $c_primary: '';
+// $c_second: '';
+$c_dark: #404040;
+// $c_warning: '';
+// $c_warningDark: '';
+
+
+// ----------------------------------------- GREY
+// $c_darkGray: '';
+// $c_mediumGray: '';
+// $c_lightGray: '';
+// $c_extraLightGray: '';
+
+// ----------------------------------------- BASE COLORS
+$c_black: #000;
+$c_white: #fff;
+
+// ----------------------------------------- TYPO
+$c_text: $c_dark;
+$fs-text: 16px;
+
+$mainFont: 'Raleway', sans-serif;
+// $secFont: 'Raleway', sans-serif;
+
+// $fs-title-h1: 30px;
+// $fs-title-h2: 30px;
+// $fs-title-h3: 30px;
+// $fs-title-h4: 25px;
+// $fs-title-h5: 20px;
+// $fs-title-h6: 30px;
+
+// ----------------------------------------- BORDER
+// $stdBorder: 1px solid $lightGrayC;
+
+// ----------------------------------------- TRANSITION
+$stdTransition: all 300ms ease-in;
+
+// ----------------------------------------- SHADOW
+$stdShadow: 0px 4px 8px rgba($c_black, 0.18);
+
+// ----------------------------------------- BTN
+$btn_disabled_opacity: 0.6;
+
+// ----------------------------------------- @media-query variabili
+$tablet: "only screen and (min-width : 768px)";
+$smallDesktop: "only screen and (min-width: 1025px)";
+$desktop: "only screen and (min-width: 1400px)";

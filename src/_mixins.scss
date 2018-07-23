@@ -1,0 +1,98 @@
+/*
+* -----------------------------------------
+* MIXIN
+* -----------------------------------------
+*/
+
+// ----------------------------------------- BACKGROUND
+@mixin bg-cover($url, $repeat: 'no-repeat', $position-x: 'center', $position-y: 'center', $size: 'cover') {
+    background: url($url) $repeat $position-x $position-y;
+    background-size: $size;
+}
+
+// ----------------------------------------- GRADIENTS
+@mixin background-gradient($start-color, $end-color, $orientation) {
+    background: $start-color;
+    @if $orientation == 'vertical' {
+        background: -webkit-linear-gradient(top, $start-color, $end-color);
+        background: linear-gradient(to bottom, $start-color, $end-color);
+    }
+    @else if $orientation == 'horizontal' {
+        background: -webkit-linear-gradient(left, $start-color, $end-color);
+        background: linear-gradient(to right, $start-color, $end-color);
+    }
+    @else {
+        background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+        background: radial-gradient(ellipse at center, $start-color, $end-color);
+    }
+}
+
+// ----------------------------------------- COVERUP
+@mixin coverUp($top, $right, $bottom, $left) {
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    top: $top;
+}
+
+// ----------------------------------------- PADDING
+@mixin padding($top, $right, $bottom, $left) {
+    padding-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+    padding-top: $top;
+}
+
+// ----------------------------------------- MARGIN
+@mixin margin($top, $right, $bottom, $left) {
+    margin-bottom: $bottom;
+    margin-left: $left;
+    margin-right: $right;
+    margin-top: $top;
+}
+
+// ----------------------------------------- FONT SIZE
+@function calculateRem($size) {
+    $remSize: $size / $fs-text;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+// ----------------------------------------- ANIMATIONS
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+/* ---- keyframes demo
+@include keyframes(fade-out) {
+    0% { opacity: 1; }
+    90% { opacity: 0; }
+}
+---- */
+
+@mixin animation($str) {
+    // ' name second repeat '
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
