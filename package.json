@@ -1,6 +1,6 @@
 {
     "name": "sassfull",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Set of SCSS mixins and silent classes for starting any new project.",
     "repository": {
         "type": "git",
