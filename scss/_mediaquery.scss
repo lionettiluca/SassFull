@@ -1,0 +1,10 @@
+/*
+* -----------------------------------------
+* Media query
+* Mobile first
+* -----------------------------------------
+*/
+
+$mq_tablet:                  "only screen and (min-width : 768px)" !default;
+$mq_smallDesktop:            "only screen and (min-width: 1025px)" !default;
+$mq_desktop:                 "only screen and (min-width: 1400px)" !default;

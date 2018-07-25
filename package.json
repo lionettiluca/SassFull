@@ -1,0 +1,19 @@
+{
+    "name": "sassfull",
+    "version": "1.0.0",
+    "description": "Set of SCSS mixins and silent classes for starting any new project.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://lklion@github.com/lklion/SassFull.git"
+    },
+    "author": "Luca Lionetti",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lklion/SassFull/issues"
+    },
+    "homepage": "https://github.com/lklion/SassFull#readme",
+    "keywords": [
+        "sass",
+        "utility"
+    ]
+}

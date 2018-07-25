@@ -1,0 +1,100 @@
+/*
+* -----------------------------------------
+* Mixins
+* -----------------------------------------
+*/
+
+// ----------------------------------------- Media query
+@import './mediaquery';
+
+// ----------------------------------------- Animations
+@mixin keyframes($animation_name) {
+    @-webkit-keyframes #{$animation_name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation_name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation_name} {
+        @content;
+    }
+    @-o-keyframes #{$animation_name} {
+        @content;
+    }
+    @keyframes #{$animation_name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+// ----------------------------------------- Background
+@mixin bg_image($url, $repeat: 'no-repeat', $position_x: 'center', $position_y: 'center', $size: 'cover') {
+    background: url($url) $repeat $position_x $position_y;
+    background-size: $size;
+}
+
+@mixin bg_gradient($start_color, $end_color, $orientation) {
+    background: $start_color;
+    @if $orientation == 'vertical' {
+        background: -webkit-linear-gradient(top, $start_color, $end_color);
+        background: linear-gradient(to bottom, $start_color, $end_color);
+    }
+    @else if $orientation == 'horizontal' {
+        background: -webkit-linear-gradient(left, $start_color, $end_color);
+        background: linear-gradient(to right, $start_color, $end_color);
+    }
+    @else {
+        background: -webkit-radial-gradient(center, ellipse cover, $start_color, $end_color);
+        background: radial-gradient(ellipse at center, $start_color, $end_color);
+    }
+}
+
+// ----------------------------------------- Media Query
+@mixin in_tablet {
+    @media #{ $mq_tablet } { @content; }
+}
+
+@mixin in_smallDesktop {
+    @media #{ $mq_smallDesktop } { @content; }
+}
+
+@mixin in_desktop {
+    @media #{ $mq_smallDesktop } { @content; }
+}
+
+// ----------------------------------------- Position
+@mixin coverUp($top, $right, $bottom, $left) {
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    top: $top;
+}
+
+@mixin setPosition($position, $top, $right, $bottom, $left) {
+    position: $position;
+    @include coverUp($top, $right, $bottom, $left)
+}
+
+// ----------------------------------------- Typography
+@mixin truncateText($overflow: ellipsis){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: $overflow;
+}
+
+@function calculateRem($size, $base_size: 14) {
+    $remSize: $size / $base_size;
+    @return $remSize * 1rem;
+}
+
+@mixin fs_inRem($size, $base_size) {
+    font-size: $size;
+    font-size: calculateRem($size, $base_size);
+}

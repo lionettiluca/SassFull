@@ -1,18 +1,23 @@
-## SassFull
+#SassFull
 Set of SCSS mixins and silent classes for starting any new project.
 
+Install
+------
+```
+npm install sassfull || yarn add sassfull
+```
 
-### What does it contain?
+How to use ?
+------
+```
+@import '~sassfull/scss/sassfull';
+```
+Read documentation for single sheet.
 
-- Base variables
-- Base settings classes
-- List of utility Mixins
-
-
-#### Want to contribute?
-
+Want to contribute?
+------
 This is just the beginning. There are a ton of great utilities out there, feel free to fork and create pull requests.
 
-#### How to use ? 
-
+About sass
+------
 Look at [Official Sass guide](http://sass-lang.com/guide)

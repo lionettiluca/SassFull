@@ -1,6 +1,6 @@
 /*
 * -----------------------------------------
-* SETTINGS
+* Settings
 * -----------------------------------------
 */
 
@@ -13,27 +13,28 @@
     box-sizing: border-box;
 }
 
-// ----------------------------------------- DISPLAY
-.d-b { display: block; }
+// ----------------------------------------- Display
+.block { display: block; }
+.iblock { display: inline-block; }
+.flex { display: flex; }
 
-.d-ib { display: inline-block; }
-
-// ----------------------------------------- BOXING
+// ----------------------------------------- Boxing
 .full-height { height: 100%; }
 
 .full-width { width: 100%; }
 
 .o-hidden { overflow: hidden; }
+.o-scroll { overflow: hidden; }
 
-// ----------------------------------------- POSITION
+// ----------------------------------------- Position
 .p {
     &-rel { position: relative; }
     &-abs { position: absolute; }
     &-fix { position: fixed; }
-    &-sti { position: sticky; }
+    &-sticky { position: sticky; }
 }
 
-// ----------------------------------------- FLOATING
+// ----------------------------------------- Floating
 .float {
     &-r { float: right; }
     &-l { float: left; }
@@ -50,17 +51,17 @@
     }
 }
 
-// ----------------------------------------- BACKGROUND
+// ----------------------------------------- Background
 .bg {
     &-black { background-color: #000; }
     &-white { background-color: #fff; }
     &-trans { background-color: transparent!important; }
 }
 
-// ----------------------------------------- WRAP
+// ----------------------------------------- Wrap
 .no-wrap { white-space: nowrap; }
 
-// ----------------------------------------- MARGIN
+// ----------------------------------------- Margin
 
 .mb {
     &-no { margin-bottom: 0; }
@@ -82,7 +83,7 @@
     &-auto { margin-top: auto; }
 }
 
-// ----------------------------------------- TEXT
+// ----------------------------------------- Text
 .txt {
     // ------ align
     &-center { text-align: center; }
@@ -98,17 +99,18 @@
     &-medium { font-weight: 500; }
     &-strong { font-weight: 700; }
     // ------ transform
-    &-uppercase { text-transform: uppercase; }
-    &-lower { text-transform: lower; }
+    &-upper { text-transform: uppercase; }
+    &-lower { text-transform: lowercase; }
 }
 
-// ----------------------------------------- IMAGE
-img.img-block {
+// ----------------------------------------- Image
+img.img-block,
+.img-block > img {
     display: block;
     max-width: 100%;
 }
 
-// ----------------------------------------- TRANSFORM
+// ----------------------------------------- Transform
 .t {
     &-r-90 {
         display: inline-block;
