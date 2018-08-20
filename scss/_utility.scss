@@ -1,7 +1,7 @@
 /*
-* -----------------------------------------
+* ------------------------------------------------------------------------------
 * Settings
-* -----------------------------------------
+* ------------------------------------------------------------------------------
 */
 
 *,
@@ -19,12 +19,21 @@
 .flex { display: flex; }
 
 // ----------------------------------------- Boxing
-.full-height { height: 100%; }
+// ----------------------------------------- Height
+.w-full { height: 100%; }
+.h-50 { height: 50%; }
+// ----------------------------------------- Width
+.w-full { width: 100%; }
+.w-50 { width: 50%; }
 
-.full-width { width: 100%; }
-
+// ----------------------------------------- scroll
 .o-hidden { overflow: hidden; }
-.o-scroll { overflow: hidden; }
+.o-hidden{ overflow: hidden; }
+.o-hidden { overflow: hidden; }
+.o-scroll { overflow: scroll; }
+.o-y-scroll { overflow-y: scroll; }
+.o-x-scroll { overflow-x: scroll; }
+
 
 // ----------------------------------------- Position
 .p {
@@ -61,8 +70,10 @@
 // ----------------------------------------- Wrap
 .no-wrap { white-space: nowrap; }
 
-// ----------------------------------------- Margin
+.word-wrap--b { word-wrap: break-word; }
+.word-wrap--n { word-wrap: none; }
 
+// ----------------------------------------- Margin
 .mb {
     &-no { margin-bottom: 0; }
     &-auto { margin-bottom: auto; }
