@@ -1,0 +1,10 @@
+/mix-manifest.json
+/node_modules
+/.vscode
+/public
+/dev
+/src
+yarn-error.log
+npm-debug.log
+yarn.lock
+.DS_Store

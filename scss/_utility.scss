@@ -1,7 +1,7 @@
 /*
-* ------------------------------------------------------------------------------
-* Settings
-* ------------------------------------------------------------------------------
+| ------------------------------------------------------------------------------
+| Utility
+| ------------------------------------------------------------------------------
 */
 
 *,
@@ -13,130 +13,54 @@
     box-sizing: border-box;
 }
 
-// ----------------------------------------- Display
-.block { display: block; }
-.iblock { display: inline-block; }
-.flex { display: flex; }
+// -----------------------------------------------------------------------------
+// Boxing
+// -----------------------------------------------------------------------------
+@import './components/border';
+@import './components/margin';
+@import './components/padding';
 
-// ----------------------------------------- Boxing
-// ----------------------------------------- Height
-.h-full { height: 100%; }
-.h-50 { height: 50%; }
-// ----------------------------------------- Width
-.w-full { width: 100%; }
-.w-50 { width: 50%; }
+// -----------------------------------------------------------------------------
+// Colors
+// -----------------------------------------------------------------------------
+@import './components/colors';
 
-// ----------------------------------------- scroll
-.o-hidden { overflow: hidden; }
-.o-hidden{ overflow: hidden; }
-.o-hidden { overflow: hidden; }
-.o-scroll { overflow: scroll; }
-.o-y-scroll { overflow-y: scroll; }
-.o-x-scroll { overflow-x: scroll; }
+// -----------------------------------------------------------------------------
+// Elements
+// -----------------------------------------------------------------------------
+@import './components/button';
 
+// -----------------------------------------------------------------------------
+// Floating
+// -----------------------------------------------------------------------------
+@import './components/floating';
 
-// ----------------------------------------- Position
-.p {
-    &-rel { position: relative; }
-    &-abs { position: absolute; }
-    &-fix { position: fixed; }
-    &-sticky { position: sticky; }
-}
+// -----------------------------------------------------------------------------
+// Display
+// -----------------------------------------------------------------------------
+@import './components/display';
 
-// ----------------------------------------- Floating
-.float {
-    &-r { float: right; }
-    &-l { float: left; }
-    &-n { float: none; }
-}
+// -----------------------------------------------------------------------------
+// Transform
+// -----------------------------------------------------------------------------
+@import './components/transform';
 
-.clearfix {
-    &::after {
-        content: '';
-        clear: both;
-        display: block;
-        height: 0;
-        visibility: hidden;
-    }
-}
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+@import './components/text';
 
-// ----------------------------------------- Background
-.bg {
-    &-black { background-color: #000; }
-    &-white { background-color: #fff; }
-    &-trans { background-color: transparent!important; }
-}
+// -----------------------------------------------------------------------------
+// Positions
+// -----------------------------------------------------------------------------
+@import './components/positions';
 
-// ----------------------------------------- Wrap
-.no-wrap { white-space: nowrap; }
+// -----------------------------------------------------------------------------
+// Size
+// -----------------------------------------------------------------------------
+@import './components/size';
 
-.word-wrap--b { word-wrap: break-word; }
-.word-wrap--n { word-wrap: none; }
-
-// ----------------------------------------- Margin
-.mb {
-    &-no { margin-bottom: 0; }
-    &-auto { margin-bottom: auto; }
-}
-
-.ml {
-    &-no { margin-left: 0; }
-    &-auto { margin-left: auto; }
-}
-
-.mr {
-    &-no { margin-right: 0; }
-    &-auto { margin-right: auto; }
-}
-
-.mt {
-    &-no { margin-top: 0; }
-    &-auto { margin-top: auto; }
-}
-
-// ----------------------------------------- Text
-.txt {
-    // ------ align
-    &-center { text-align: center; }
-    &-right { text-align: right; }
-    &-left { text-align: left; }
-    // ------ colors
-    &-white { color: #fff; }
-    &-black { color: #000; }
-    // ------ weight
-    &-extra-light { font-weight: 100; }
-    &-light { font-weight: 200; }
-    &-normal { font-weight: 400; }
-    &-medium { font-weight: 500; }
-    &-strong { font-weight: 700; }
-    // ------ transform
-    &-upper { text-transform: uppercase; }
-    &-lower { text-transform: lowercase; }
-}
-
-// ----------------------------------------- Image
-img.img-block,
-.img-block > img {
-    display: block;
-    max-width: 100%;
-}
-
-// ----------------------------------------- Transform
-.t {
-    &-r-90 {
-        display: inline-block;
-        transform: rotate(90deg);
-    }
-    &-r-180 {
-        display: inline-block;
-        transform: rotate(180deg);
-    }
-    &-r--90 {
-        display: inline-block;
-        transform: rotate(-90deg);
-    }
-    &-r--180 {
-        display: inline-block;
-        transform: rotate(-180deg);
-    }
-}
+// -----------------------------------------------------------------------------
+// Scroll
+// -----------------------------------------------------------------------------
+@import './components/scroll';

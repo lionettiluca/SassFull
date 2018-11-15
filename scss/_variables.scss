@@ -1,58 +1,73 @@
 /*
-* ------------------------------------------------------------------------------
-* Variables
-* ------------------------------------------------------------------------------
+| ------------------------------------------------------------------------------
+| Variables
+| ------------------------------------------------------------------------------
 */
 
-// ----------------------------------------- Colors
-$c_primary:                     #E62565 !default;
-$c_alt:                         #2E294E !default;
+// -----------------------------------------------------------------------------
+// Colors
+// -----------------------------------------------------------------------------
+$c_primary:                 #E62565 !default;
+$c_alt:                     #2E294E !default;
 
-$c_dark:                        #404040 !default;
-$c_success:                     #4CD964 !default;
-$c_error:                       #E54D42 !default;
-$c_warning:                     #FDC02F !default;
-$c_info:                        #1FBCD2 !default;
+$c_dark:                    #404040 !default;
+$c_success:                 #4CD964 !default;
+$c_error:                   #E54D42 !default;
+$c_warning:                 #FDC02F !default;
+$c_info:                    #1FBCD2 !default;
 
+// -----------------------------------------------------------------------------
+// Colors - gray
+// -----------------------------------------------------------------------------
+$c_darkGray:                #404040 !default;
+$c_mediumGray:              #BFBFBF !default;
+$c_lightGray:               #CECED2 !default;
+$c_extraLightGray:          #EFEFF4 !default;
 
-// ----------------------------------------- Colors - gray
-$c_darkGray:                    #404040 !default;
-$c_mediumGray:                  #BFBFBF !default;
-$c_lightGray:                   #CECED2 !default;
-$c_extraLightGray:              #EFEFF4 !default;
+// -----------------------------------------------------------------------------
+// Colors - base
+// -----------------------------------------------------------------------------
+$c_black:                   #000 !default;
+$c_white:                   #fff !default;
 
-// ----------------------------------------- Colors - base
-$c_black:                       #000 !default;
-$c_white:                       #fff !default;
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+$c_text:                      $c_dark !default;
+$fs-text:                     14px !default;
+$lh-text:                     1.6 !default;
 
-// ----------------------------------------- Typography
-$c_text:                        $c_dark !default;
-$fs-text:                       14px !default;
-$lh-text:                       1.6 !default;
+$fs-title-h1:                 2.5rem !default;
+$fs-title-h2:                 2.2rem !default;
+$fs-title-h3:                 2rem !default;
+$fs-title-h4:                 1.6rem !default;
+$fs-title-h5:                 1.3rem !default;
+$fs-title-h6:                 1rem !default;
 
-$fs-title-h1:                   2.5rem !default;
-$fs-title-h2:                   2.2rem !default;
-$fs-title-h3:                   2rem !default;
-$fs-title-h4:                   1.6rem !default;
-$fs-title-h5:                   1.3rem !default;
-$fs-title-h6:                   1rem !default;
+// -----------------------------------------------------------------------------
+// Border
+// -----------------------------------------------------------------------------
+$bd_std_width:                1px !default;
+$bd_std_style:                solid !default;
+$bd_std_color:                $c_lightGray !default;
+$bd_std_radius:               4px !default;
+$bd_ext_radius:               8px !default;
+$bd_std:                      $bd_std_width $bd_std_style $c_lightGray !default;
 
-// ----------------------------------------- Border
-$bd_std_width:                  1px !default;
-$bd_std_style:                  solid !default;
-$bd_std_color:                  $c_lightGray !default;
-$bd_std_radius:                 4px !default;
-$bd_ext_radius:                 8px !default;
-$bd_std:                        $bd_std_width $bd_std_style $c_lightGray !default;
+// -----------------------------------------------------------------------------
+// Transition
+// -----------------------------------------------------------------------------
+$tran_speed:                  all 100ms ease-in !default;
+$tran_std:                    all 300ms ease-in !default;
+$tran_slow:                   all 500ms ease-in !default;
 
-// ----------------------------------------- Transition
-$tran_speed:                    all 100ms ease-in !default;
-$tran_std:                      all 300ms ease-in !default;
-$tran_slow:                     all 500ms ease-in !default;
+// -----------------------------------------------------------------------------
+// Shadow
+// -----------------------------------------------------------------------------
+$sh_std:                      0px 4px 8px rgba($c_black, 0.18) !default;
+$sh_large:                    0px 8px 16px rgba($c_black, 0.20) !default;
 
-// ----------------------------------------- Shadow
-$sh_std:                        0px 4px 8px rgba($c_black, 0.18) !default;
-$sh_large:                      0px 8px 16px rgba($c_black, 0.20) !default;
-
-// ----------------------------------------- Buttons
-$btn_disabled_opacity:          0.6 !default;
+// -----------------------------------------------------------------------------
+// Buttons
+// -----------------------------------------------------------------------------
+$btn_disabled_opacity:        0.6 !default;

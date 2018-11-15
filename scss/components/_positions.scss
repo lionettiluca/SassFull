@@ -1,9 +1,12 @@
 /*
 | ------------------------------------------------------------------------------
-| Full sassfull package
+| Positions
 | ------------------------------------------------------------------------------
 */
 
-@import     './variables';
-@import     './utility';
-@import     './mixins';
+.p {
+    &-rel { position: relative; }
+    &-abs { position: absolute; }
+    &-fix { position: fixed; }
+    &-sticky { position: sticky; }
+}

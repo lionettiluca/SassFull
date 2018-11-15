@@ -1,9 +1,12 @@
 /*
 | ------------------------------------------------------------------------------
-| Full sassfull package
+| scroll
 | ------------------------------------------------------------------------------
 */
 
-@import     './variables';
-@import     './utility';
-@import     './mixins';
+.o {
+    &-hidden { overflow: hidden; }
+    &-scroll { overflow: scroll; }
+    &-y-scroll { overflow-y: scroll; }
+    &-x-scroll { overflow-x: scroll; }
+}
